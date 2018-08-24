@@ -3,4 +3,5 @@
 
 # 使用前请添加插件
 $ ionic cordova plugin add cordova-plugin-qrscanner
+
 $ npm install --save @ionic-native/qr-scanner
