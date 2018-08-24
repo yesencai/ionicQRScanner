@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      首页
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <button ion-button full color="danger" (click)="pushScan()">单扫--->{{billCode}}</button>
+  <button ion-button full color="danger" (click)="pushScan()">连扫</button>
+  <ion-list>
+    <ion-item *ngFor="let item of data">
+      {{item}}
+    </ion-item>
+  </ion-list>
+</ion-content>

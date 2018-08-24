@@ -1,0 +1,53 @@
+<!--
+  Generated template for the ScanPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>scan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="qrscanner-area">
+  </div>
+  <div class="through-line"></div>
+  <div class="button-bottom">
+    <ion-row style="text-align: center;margin: 0px auto">
+      <ion-col col-4>
+        <button (click)="toggleLight()" ion-fab *ngIf="flashNoSelect" ion-fab color="primary">
+          <ion-icon name="flash"></ion-icon>
+        </button>
+        <button (click)="toggleLight()" ion-fab *ngIf="flashIsSelect" ion-fab color="danger">
+          <ion-icon name="flash"></ion-icon>
+        </button>
+      </ion-col>
+
+      <ion-col col-4>
+        <button (click)="toggleCamera()" *ngIf="cameraNoSelect" ion-fab color="primary">
+          <ion-icon name="reverse-camera"></ion-icon>
+        </button>
+
+        <button (click)="toggleCamera()" *ngIf="cameraIsSelect" ion-fab color="danger">
+          <ion-icon name="reverse-camera"></ion-icon>
+        </button>
+
+      </ion-col>
+
+      <ion-col col-4>
+        <button  ion-fab (click)="changeStyle()" *ngIf="noSelect"  color="primary">
+          <ion-icon name="scan" >连扫</ion-icon>
+        </button>
+
+        <button  ion-fab (click)="changeStyle()" *ngIf="isSelect" color="danger" >
+          <ion-icon name="scan" >连扫</ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

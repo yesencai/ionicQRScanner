@@ -1,0 +1,82 @@
+page-scan {
+  .qrscanner {
+    background: none;
+    &-area {
+      width: 100%;
+      height: 86%;
+      background: url(../assets/imgs/scanner.svg) no-repeat center center;
+      background-size: contain;
+    }
+  }
+  .through-line {
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background: blue;
+    position: absolute;
+    animation: myfirst 2s linear infinite alternate;
+  }
+  @keyframes myfirst {
+    0% {
+      background: red;
+      top: 30%;
+    }
+    25% {
+      background: yellow;
+      top: 35%;
+    }
+    50% {
+      background: blue;
+      top: 40%;
+    }
+    75% {
+      background: green;
+      top: 45%;
+    }
+    100% {
+      background: red;
+      top: 50%;
+    }
+  }
+
+  .button-bottom {
+    margin:0 auto;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    bottom: 80px;
+    .icon-flash {
+      width: 15%;
+    }
+    .icon-camera {
+      margin-left: 15px;
+      width: 15%;
+    }
+    .icon-scan{
+      margin-left: 15px;
+      width: 15%;
+      .head-color{
+        color: white;
+        background-color: transparent;
+
+      }
+      .head-color:hover{
+        color: #fe8189;
+      }
+      .head-color:link{
+        background-color: transparent;
+        border: none;
+      }
+    }
+    .fab ion-icon {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      font-size: 1.3rem;
+    }
+  }
+  .href{
+
+  }
+}
